@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.RememberWithNotify.FullscreenContainer"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageNotify"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="rememberClick"
+        android:text="@string/notify_title" />
+
+    <EditText
+        android:id="@+id/messageNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleNotify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:ems="18"
+        android:hint="@string/placeholder_remember"
+        android:inputType="textPersonName"
+        android:maxLines="10"
+        android:minLines="1" />
+
+    <EditText
+        android:id="@+id/titleNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="286dp"
+        android:ems="18"
+        android:hint="@string/placeholder_title"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/languageIngles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="languageEnglish"
+        app:srcCompat="@drawable/ingles" />
+
+    <ImageButton
+        android:id="@+id/languageEspanol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/languageIngles"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="languageSpanish"
+        app:srcCompat="@drawable/espanol" />
+
+</RelativeLayout>

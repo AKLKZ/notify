@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Notify</string>
+
+    <string name="REMEMBER_BUTTON">Remember</string>
+
+    <!-- ENGLISH -->
+    <string name="placeholder_title">Title Notification</string>
+    <string name="placeholder_remember">Write the message you want to remember!!</string>
+    <string name="notify_title">NOTIFY</string>
+
+    <!-- SPANISH -->
+    <string name="placeholder_titulo">Titulo Notificacion</string>
+    <string name="placeholder_recordar">Escribe el mensaje que quiera recordar!!</string>
+    <string name="notify_titulo">NOTIFICAR</string>
+</resources>
